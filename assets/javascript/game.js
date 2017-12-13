@@ -36,10 +36,11 @@ function startGame(){
 	
  underScores = []; 
  guessesLeft = 10;
+ wrongArray = [];
 	currentWord = wordBank[Math.floor(Math.random()*wordBank.length)];
 	remainingLetters = currentWord.length;
 
-var wrongArray = [];
+
 // for loop used to change currenWord into underscores 
 //=======================================================
 	// document.querySelector("#title").innerHTML = "Book Title: ";
