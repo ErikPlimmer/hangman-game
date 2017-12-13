@@ -1,3 +1,15 @@
+// var bank
+//=======================================================
+
+// array of book titles 
+var wordBank = ["THECATINTHEHAT", "GREENEGGSANDHAM", "THELORAX", "THEFOOTBOOK", "IFIRANAZOO", "ONBEYONDZEBRA", "TENAPPLESUPONTOP", "HOPONPOP", "HORTONHEARSAWHO", "HORTONHATCHESTHEEGG"]
+
+// wrong guesses
+var wrongArray = [];
+
+// current book title the user is trying to guess
+var currentWord;
+
 // number of guesses left until gameover
 var guessesLeft =10;
 
