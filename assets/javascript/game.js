@@ -19,9 +19,6 @@ var underScores = [];
 // remaining letters not choosen by user
 var remainingLetters = 0;
 
-// the alphabet
-var alphabet = "a b c d e f g h i j k l m n o p q r s t u v w x y z";
-
 // wins
 var wins =0;
 
@@ -62,12 +59,12 @@ console.log("first currentword is " ,currentWord);
 
 
 
-	document.querySelector("#title").innerHTML = "Book Title: " + underScores + "<br><br><br><br>";
-	document.querySelector("#guesses").innerHTML = "Remaining Guesses: " + guessesLeft + "<br><br><br><br>";
-	document.querySelector("#wins").innerHTML = "Wins: " + wins + "<br><br><br><br>";
-	document.querySelector("#losses").innerHTML = "Losses: " + losses + "<br><br><br><br>";
-	document.querySelector("#letters").innerHTML = "Letters Guessed: " +  wrongArray + "<br><br><br><br>";
-	document.querySelector("#button").value = "Play again" + " ";
+	document.querySelector("#title").innerHTML = `Book Title:  ${underScores} <br><br><br><br>`;
+	document.querySelector("#guesses").innerHTML = `Remaining Guesses:  ${guessesLeft} <br><br><br><br>`;
+	document.querySelector("#wins").innerHTML = `Wins:  ${wins} <br><br><br><br>`;
+	document.querySelector("#losses").innerHTML = `Losses:  ${losses} <br><br><br><br>`;
+	document.querySelector("#letters").innerHTML = `Letters Guessed:  ${wrongArray} <br><br><br><br>`;
+	document.querySelector("#button").value = `Play again ${" "} `;
 
 console.log("remaining letters is", remainingLetters);
 console.log("guesses left is",guessesLeft);
@@ -98,6 +95,7 @@ console.log("underScores",underScores);
 				underScores[rightArray[j]] = letter;
 				if (remainingLetters === 0 ) {
 					wins++;
+					
 
 
 					// if (wins === 3) {
@@ -145,4 +143,4 @@ console.log("underScores",underScores);
 //============================
 // create a reset game function 
 // create an animation to let user know they guessed book title correctly 
-// create a sound responce for users wins and losses  
+// create a sound response for users wins and losses  
